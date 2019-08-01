@@ -3,11 +3,21 @@
 matrix = [{11 : 1, 12 : 2, 13 : 3}, {14 : 4, 15:5, 16:6}, {17:7, 18:8, 19:9}]
 for row in matrix:
     for a, b in row.items():
-        print (a, b)  # 2 collums apear
+        print (a, b)  # 2 collums
+11 1
+12 2
+13 3
+14 4
+15 5
+16 6
+17 7
+18 8
+19 9
 ///
+
 matrix = [{11 : 1, 12 : 2, 13 : 3}, {14 : 4, 15:5, 16:6}, {17:7, 18:8, 19:9}]
 for a in matrix:
-    print (list(a))
+    print (list(a)) # printing kays
 ... 
 [11, 12, 13]
 [14, 15, 16]
@@ -16,7 +26,7 @@ for a in matrix:
 
 matrix = [{11 : 1, 12 : 2, 13 : 3}, {14 : 4, 15:5, 16:6}, {17:7, 18:8, 19:9}]
 for a in matrix:
-    print (matrix [a])
+    print (a) # print (matrix [a]) # ?
 ...
 {11: 1, 12: 2, 13: 3}
 {14: 4, 15: 5, 16: 6}
@@ -25,4 +35,16 @@ for a in matrix:
 
 matrix = [{11 : 1, 12 : 2, 13 : 3}, {14 : 4, 15:5, 16:6}, {17:7, 18:8, 19:9}]
 for a in matrix:
-    print (a[11])
+    for b in a:
+        print (a[b])
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+////
